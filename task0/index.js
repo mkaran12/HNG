@@ -2,7 +2,6 @@ const fs = require('fs');
 const http = require('http');
 const url = require('url');
 const replaceTemplate = require('./modules/replaceTemplate');
-const cors = require('cors'); // You can remove this import if not used elsewhere
 
 const tempOverview = fs.readFileSync(
   `${__dirname}/templates/template-overview.html`,
@@ -72,6 +71,8 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(8000, '127.0.0.1', () => {
-  console.log('Listening to requests on port 8000');
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  // Change app.listen to server.listen
+  console.log(`Server is running on port ${PORT}`);
 });
