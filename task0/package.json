@@ -1,0 +1,17 @@
+{
+  "name": "task0",
+  "version": "1.0.0",
+  "description": "hng internship task 0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "moses karani",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}

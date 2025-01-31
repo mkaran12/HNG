@@ -1,2 +1,0 @@
-# hngIntership
-learning
